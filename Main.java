@@ -211,7 +211,7 @@ public class Main {
 
     private static int getBlockSize(BufferedReader reader) throws IOException {
         List<String> blockOptions = Arrays.asList("16 bytes", "32 bytes", "64 bytes");
-        int choice = getUserChoice(reader, "Select block size:", blockOptions);
+        int choice = getUserChoice(reader, "Select cache block size:", blockOptions);
         return choice == 1 ? 16 : choice == 2 ? 32 : 64;
     }
 
